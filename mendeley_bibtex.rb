@@ -10,6 +10,7 @@ output = './reference.bib'
 including_list =
 ["@",\
 "author = {",\
+"editor = {",\
 "doi = {",\
 "issn = {",\
 "journal = {",\
