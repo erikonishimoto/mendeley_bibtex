@@ -67,6 +67,7 @@ including_list =
 "volume = {",\
 "year = {",\
 "booktitle = {",\
+"publisher = {",\
 ]
 including_list << "doi = {" if doi
 including_list << "}"
