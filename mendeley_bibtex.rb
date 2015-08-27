@@ -113,15 +113,22 @@ abbhash={
   "Reviews of Geophysics"=>"RGEO",
   "Geophysical Research Letters"=>"GRL",
   "Quarterly Journal of the Royal Meteorological Society"=>"QJRMS",
-  "Geofysiske Publikasjoner"=>"Geofys. Publ.",
   "Eos"=>"TAGU",
   "Journal of Geophysical Research"=>"JGR",
   "Journal of the Meteorological Society of Japan. Ser. II"=>"JMSJ"
+}
+chnamehash={
+  "Geofysiske Publikasjoner"=>"Geofys. Publ."
 }
 if chabb
   add_line=""
   abbhash.each{|jnl,jnlabb|
     add_line << " | sed -e 's/{#{jnl}}/#{jnlabb}/'"
+  }
+  command << " #{add_line}"
+
+  chnamehash.each{|jnl,jnlabb|
+    add_line << " | sed -e 's/#{jnl}/#{jnlabb}/'"
   }
   command << " #{add_line}"
 end
