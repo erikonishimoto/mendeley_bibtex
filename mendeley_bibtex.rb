@@ -11,6 +11,7 @@ parser.set_options(
   ['--output','--o', GetoptLong::REQUIRED_ARGUMENT],
   ['--nodoi', GetoptLong::NO_ARGUMENT],
   ['--nonkf', GetoptLong::NO_ARGUMENT],
+  ['--chabb', GetoptLong::NO_ARGUMENT],
   ['--help', '-h', GetoptLong::NO_ARGUMENT]
 )
 
@@ -21,6 +22,7 @@ output = './reference.bib'
 #output = './test.bib'
 doi = true
 euc = true
+chabb = false
 help = false
 
 #-- get input values
@@ -35,6 +37,8 @@ parser.each_option do |name,arg|
     doi = false
   when 'nonkf'
     euc = false
+  when 'chabb'
+    chabb = true
   when 'help' , 'h'
     help = true
   end
@@ -47,6 +51,7 @@ if (help)
     --o, --output [string]    specify a output png file (default './reference.bib')
     --nodoi                   exclude doi (default false)
     --nonkf                   not trun into euc_jp (default false)
+    --chabb                   change journal names to their abbreviation (default false)
     -h, --help                show this message"
   puts usage
   exit
@@ -96,10 +101,33 @@ command = "grep '^#{including_list[0]}"
 including_list[1..-1].each_with_index{|include,i|
   command << "\\|^#{include}"
 }
+command << "'"
+
 add_comma = "| sed -e 's/^}/,}/'"
+command << " #{input} #{add_comma}"
 
-command << "' #{input} #{add_comma} > #{output}"
+###-- change journal abbrevations
+abbhash={
+  "Journal of the Atmospheric Sciences"=>"JAS",
+  "Journal of Climate"=>"JCLI",
+  "Reviews of Geophysics"=>"RGEO",
+  "Geophysical Research Letters"=>"GRL",
+  "Quarterly Journal of the Royal Meteorological Society"=>"QJRMS",
+  "Geofysiske Publikasjoner"=>"Geofys. Publ.",
+  "Eos"=>"TAGU",
+  "Journal of Geophysical Research"=>"JGR",
+  "Journal of the Meteorological Society of Japan. Ser. II"=>"JMSJ"
+}
+if chabb
+  add_line=""
+  abbhash.each{|jnl,jnlabb|
+    add_line << " | sed -e 's/#{jnl}/#{jnlabb}/'"
+  }
+  command << " #{add_line}"
+end
 
+###-----exe command
+command << "> #{output}"
 puts command
 system( command )
 
