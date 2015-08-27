@@ -108,13 +108,19 @@ command << " #{input} #{add_comma}"
 
 ###-- change journal abbrevations
 abbhash={
+  "Nature"=>"NAT",
+  "Science"=>"SCI",
+  "Tellus"=>"TELLUS",
   "Journal of the Atmospheric Sciences"=>"JAS",
   "Journal of Climate"=>"JCLI",
+  "Monthly Weather Review"=>"MWR",
   "Reviews of Geophysics"=>"RGEO",
   "Geophysical Research Letters"=>"GRL",
   "Quarterly Journal of the Royal Meteorological Society"=>"QJRMS",
   "Eos"=>"TAGU",
   "Journal of Geophysical Research"=>"JGR",
+  "SOLA"=>"SOLA",
+  "Journal of the Meteorological Society of Japan"=>"JMSJ",
   "Journal of the Meteorological Society of Japan. Ser. II"=>"JMSJ"
 }
 chnamehash={
