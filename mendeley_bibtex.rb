@@ -121,7 +121,7 @@ abbhash={
 if chabb
   add_line=""
   abbhash.each{|jnl,jnlabb|
-    add_line << " | sed -e 's/#{jnl}/#{jnlabb}/'"
+    add_line << " | sed -e 's/{#{jnl}}/#{jnlabb}/'"
   }
   command << " #{add_line}"
 end
