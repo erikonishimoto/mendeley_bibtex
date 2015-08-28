@@ -5,10 +5,13 @@
 #     作成: 2015-8-28(Fri)  Eriko Nishimoto
 #
 
-input = './reference.bib'
-output = './reference2.bib'
+input = (ARGV[0]||'./reference.bib').to_s
+output = (ARGV[1]||'./reference2.bib').to_s
 
+puts "Read from #{input} ..\n"
 file=File::open(input,"r")
+
+puts "Create output file: #{output} ..\n"
 outfile=File::open(output,"w")
 
 while line=file.gets
