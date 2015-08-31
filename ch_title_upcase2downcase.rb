@@ -33,6 +33,7 @@ while line=file.gets
         ,/QBO/,/ITCZ/,/Kelvin/,/Rossby/,/OLR/,/HRC/\
         ,/MJO/,/Madden/,/Julian/,/Brewer/,/Dobson/\
         ,/^Eliassen-Palm$/,/Plumb/,/McEwan/\
+        ,/WISHE/\
         ,/^Part/,/^I:$/,/^II:$/\
         ,/GCM/,/CCM/,/CMIP/,/WRF/\
         ,/hPa/\
