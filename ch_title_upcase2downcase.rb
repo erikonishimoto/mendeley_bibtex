@@ -28,6 +28,7 @@ while line=file.gets
       when /NCEP/,/NCAR/,/ECMWF/,/ERA/,/JRA/\
         ,/NASA/,/WACCM/,/MRI/,/IPCC/,/Max-Planck/\
         ,/TOGA/,/COARE/,/IOP/,/SHADOZ/\
+        ,/SPARC/,/CLIVAR/\
         ,/A-Train/,/SMILES/,/ICESat/,/TRMM/\
         ,/ENSO/,/El /,/Nino/,/Ni\\/,/La /,/Nina/\
         ,/QBO/,/ITCZ/,/Kelvin/,/Rossby/,/OLR/,/HRC/\
