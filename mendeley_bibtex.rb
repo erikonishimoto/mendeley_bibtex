@@ -121,7 +121,8 @@ abbhash={
   "Journal of Geophysical Research"=>"JGR",
   "SOLA"=>"SOLA",
   "Journal of the Meteorological Society of Japan"=>"JMSJ",
-  "Journal of the Meteorological Society of Japan. Ser. II"=>"JMSJ"
+  "Journal of the Meteorological Society of Japan. Ser. II"=>"JMSJ",
+  "Bulletin of the American Meteorological Society"=>"BAMS"
 }
 chnamehash={
   "Geofysiske Publikasjoner"=>"Geofys. Publ."
