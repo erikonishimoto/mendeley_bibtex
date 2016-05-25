@@ -29,7 +29,7 @@ while line=file.gets
         ,/NASA/,/WACCM/,/MRI/,/IPCC/,/Max-Planck/\
         ,/TOGA/,/COARE/,/IOP/,/SHADOZ/\
         ,/SPARC/,/CLIVAR/\
-        ,/A-Train/,/SMILES/,/ICESat/,/TRMM/\
+        ,/A-Train/,/SMILES/,/ICESat/,/TRMM/,/TMPA/\
         ,/ENSO/,/El /,/Nino/,/Ni\\/,/La /,/Nina/\
         ,/QBO/,/ITCZ/,/Kelvin/,/Rossby/,/OLR/,/HRC/\
         ,/MJO/,/Madden/,/Julian/,/Brewer/,/Dobson/\
@@ -43,6 +43,7 @@ while line=file.gets
         ,/Tahiti/,/Japan/,/China/,/Russia/,/Austral/\
         ,/Delhi/,/Colcata/,/Cochin/\
         ,/O\\_3/,/^CO/,/^NO/\
+        ,/SST/\
         ,/^"/
 
         newline<<" #{tw}"
