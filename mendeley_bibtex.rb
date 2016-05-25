@@ -108,21 +108,22 @@ command << " #{input} #{add_comma}"
 
 ###-- change journal abbrevations
 abbhash={
-  "Nature"=>"NAT",
-  "Science"=>"SCI",
-  "Tellus"=>"TELLUS",
-  "Journal of the Atmospheric Sciences"=>"JAS",
-  "Journal of Climate"=>"JCLI",
-  "Monthly Weather Review"=>"MWR",
-  "Reviews of Geophysics"=>"RGEO",
-  "Geophysical Research Letters"=>"GRL",
-  "Quarterly Journal of the Royal Meteorological Society"=>"QJRMS",
+  "Bulletin of the American Meteorological Society"=>"BAMS",
   "Eos"=>"TAGU",
+  "Geophysical Research Letters"=>"GRL",
+  "International Journal of Climatology"=>"IJC",
+  "Journal of Climate"=>"JCLI",
   "Journal of Geophysical Research"=>"JGR",
-  "SOLA"=>"SOLA",
+  "Journal of the Atmospheric Sciences"=>"JAS",
   "Journal of the Meteorological Society of Japan"=>"JMSJ",
   "Journal of the Meteorological Society of Japan. Ser. II"=>"JMSJ",
-  "Bulletin of the American Meteorological Society"=>"BAMS"
+  "Monthly Weather Review"=>"MWR",
+  "Nature"=>"NAT",
+  "Quarterly Journal of the Royal Meteorological Society"=>"QJRMS",
+  "Reviews of Geophysics"=>"RGEO",
+  "Science"=>"SCI",
+  "SOLA"=>"SOLA",
+  "Tellus"=>"TELLUS"
 }
 chnamehash={
   "Geofysiske Publikasjoner"=>"Geofys. Publ."
