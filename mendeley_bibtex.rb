@@ -109,11 +109,13 @@ command << " #{input} #{add_comma}"
 ###-- change journal abbrevations
 abbhash={
   "Bulletin of the American Meteorological Society"=>"BAMS",
+  "Climate Dynamics"=>"CDYN",
   "Eos"=>"TAGU",
   "Geophysical Research Letters"=>"GRL",
   "International Journal of Climatology"=>"IJC",
   "Journal of Climate"=>"JCLI",
   "Journal of Geophysical Research"=>"JGR",
+  "Journal of Hydrometeorology"=>"JHM",
   "Journal of the Atmospheric Sciences"=>"JAS",
   "Journal of the Meteorological Society of Japan"=>"JMSJ",
   "Journal of the Meteorological Society of Japan. Ser. II"=>"JMSJ",
