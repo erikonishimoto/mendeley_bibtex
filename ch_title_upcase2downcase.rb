@@ -20,9 +20,13 @@ while line=file.gets
   #-----------------------ch title
   if /^title =/ =~ line
     ttl = line.split("title = {")[-1].split("},\r\n")[0]
-    ttlword = ttl.split(" ")
 
-    newline="title = {"
+case ttl
+when "{Middle Atmosphere Dynamics}"
+    ttl_new=ttl
+else 
+    ttl_new=""
+    ttlword = ttl.split(" ")
     ttlword.each_with_index{|tw,i|
       case tw
       when /NCEP/,/NCAR/,/ECMWF/,/ERA/,/JRA/\
@@ -47,20 +51,22 @@ while line=file.gets
         ,/SST/\
         ,/^"/
 
-        newline<<" #{tw}"
+        ttl_new<<" #{tw}"
       else
         if i==0
           if (tw.length) >= 3
-            newline<<" #{tw[0..1].upcase}#{tw[2..-1].downcase}"
+            ttl_new<<" #{tw[0..1].upcase}#{tw[2..-1].downcase}"
           else
-            newline<<" #{tw[0..1].upcase}"
+            ttl_new<<" #{tw[0..1].upcase}"
           end
         else
-          newline<<" #{tw.downcase}"
+          ttl_new<<" #{tw.downcase}"
         end
       end
     }
-    newline << "},\r\n"
+end
+    
+    newline="title = {#{ttl_new}},\r\n"
 
     outfile.puts newline
   else
