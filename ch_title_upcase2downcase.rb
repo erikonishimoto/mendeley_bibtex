@@ -41,7 +41,7 @@ else
         ,/TTL/\
         ,/^Eliassen-Palm$/,/Plumb/,/McEwan/\
         ,/WISHE/\
-        ,/^Part/,/^I:$/,/^II:$/\
+        ,/^Part/,/^I:$/,/^II:$/,/^III:$/\
         ,/GCM/,/CCM/,/CMIP/,/WRF/\
         ,/hPa/\
         ,/Pacific/,/Atlantic/\
