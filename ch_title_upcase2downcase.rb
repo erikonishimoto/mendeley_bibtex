@@ -34,7 +34,8 @@ else
         ,/TOGA/,/COARE/,/IOP/,/SHADOZ/\
         ,/SPARC/,/CLIVAR/\
         ,/A-Train/,/SMILES/,/ICESat/,/TRMM/,/TMPA/\
-        ,/ENSO/,/El /,/Nino/,/Ni\\/,/La /,/Nina/\
+        ,/ENSO/,/El/,/Nino/,/^Ni/,/La/,/Nina/\
+        ,/Quasi-Biennial/,/Oscillation/\
         ,/QBO/,/ITCZ/,/Kelvin/,/Rossby/,/OLR/,/HRC/\
         ,/MJO/,/Madden/,/Julian/,/Brewer/,/Dobson/\
         ,/TTL/\
