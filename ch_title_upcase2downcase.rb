@@ -44,7 +44,7 @@ else
         ,/WISHE/\
         ,/^Part/,/^I:$/,/^II:$/,/^III:$/\
         ,/GCM/,/CCM/,/CMIP/,/WRF/\
-        ,/hPa/\
+        ,/hPa/,/EOF/\
         ,/Pacific/,/Atlantic/\
         ,/Asia/,/Europ/,/Africa/\
         ,/Tahiti/,/Japan/,/China/,/Russia/,/Austral/\
