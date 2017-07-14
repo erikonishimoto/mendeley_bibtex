@@ -29,7 +29,7 @@ else
     ttlword = ttl.split(" ")
     ttlword.each_with_index{|tw,i|
       case tw
-      when /NCEP/,/NCAR/,/ECMWF/,/ERA/,/JRA/\
+      when /NCEP/,/NCAR/,/ECMWF/,/ERA/,/JRA/,/MERRA/\
         ,/NASA/,/WACCM/,/MRI/,/IPCC/,/Max-Planck/\
         ,/TOGA/,/COARE/,/IOP/,/SHADOZ/\
         ,/SPARC/,/CLIVAR/\
