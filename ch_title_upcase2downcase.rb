@@ -49,6 +49,8 @@ else
         ,/Asia/,/Europ/,/Africa/\
         ,/Tahiti/,/Japan/,/China/,/Russia/,/Austral/\
         ,/Delhi/,/Colcata/,/Cochin/\
+        ,/Antarctic/,/Arctic/\
+        ,/Southern/,/Hemisphere/,/Northern/,/Hemisphere/\
         ,/O\\_3/,/^CO/,/^NO/\
         ,/SST/\
         ,/^"/
