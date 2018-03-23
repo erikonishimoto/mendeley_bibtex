@@ -108,6 +108,7 @@ command << " #{input} #{add_comma}"
 
 ###-- change journal abbrevations
 abbhash={
+  "Atmospheric Chemistry and Physics"=>"ACP",
   "Bulletin of the American Meteorological Society"=>"BAMS",
   "Climate Dynamics"=>"CDYN",
   "Eos"=>"TAGU",
