@@ -115,6 +115,7 @@ abbhash={
   "International Journal of Climatology"=>"IJC",
   "Journal of Climate"=>"JCLI",
   "Journal of Geophysical Research"=>"JGR",
+  "Journal of Geophysical Research: Atmospheres"=>"JGRA",
   "Journal of Hydrometeorology"=>"JHM",
   "Journal of the Atmospheric Sciences"=>"JAS",
   "Journal of the Meteorological Society of Japan"=>"JMSJ",
