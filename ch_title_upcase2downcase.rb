@@ -30,7 +30,7 @@ else
     ttlword.each_with_index{|tw,i|
       case tw
       when /NCEP/,/NCAR/,/ECMWF/,/ERA/,/JRA/,/MERRA/\
-        ,/NASA/,/WACCM/,/MRI/,/IPCC/,/Max-Planck/\
+        ,/NASA/,/WACCM/,/MRI/,/IPCC/,/Max-Planck/,/UKMO/\
         ,/TOGA/,/COARE/,/IOP/,/SHADOZ/\
         ,/SPARC/,/CLIVAR/\
         ,/A-Train/,/SMILES/,/ICESat/,/TRMM/,/TMPA/\
@@ -46,7 +46,7 @@ else
         ,/GCM/,/CCM/,/CMIP/,/WRF/\
         ,/hPa/,/EOF/\
         ,/Pacific/,/Atlantic/\
-        ,/Asia/,/Europ/,/Africa/\
+        ,/Asia/,/Europ/,/Africa/,/Indian/\
         ,/Tahiti/,/Japan/,/China/,/Russia/,/Austral/\
         ,/Delhi/,/Colcata/,/Cochin/\
         ,/Antarctic/,/Arctic/\
